@@ -8,6 +8,11 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFF072C3F), // Warna latar biru gelap[cite: 5]
       body: SafeArea(
+        child: LayoutBuilder(
+          builder: (context, constraints) => SingleChildScrollView(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(minHeight: constraints.maxHeight),
+              child: IntrinsicHeight(
         child: Padding(
           padding: const EdgeInsets.all(24.0),
           child: Column(
@@ -131,6 +136,10 @@ class SplashScreen extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+        ),
+              ),
+            ),
           ),
         ),
       ),

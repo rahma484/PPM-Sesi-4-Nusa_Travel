@@ -118,7 +118,6 @@ class SplashScreen extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               
-              // Keterangan Teknis untuk Bukti Tugas[cite: 5]
               Container(
                 width: double.infinity,
                 padding: const EdgeInsets.all(12),

@@ -4,7 +4,6 @@ import '../models/tour_package.dart';
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
 
-  // Data Paket Wisata Sesuai dengan Nama File Gambarmu
   final List<TourPackage> packages = [
     TourPackage(id: '2', title: 'Pesona Bahari Raja Ampat', description: 'Eksplorasi surga bawah laut Papua.', price: 6850000, imageUrl: 'assets/images/Raja Ampat.jpg'),
     TourPackage(id: '1', title: 'Pesona Bali', description: 'Nikmati pantai dan budaya Bali.', price: 1500000, imageUrl: 'assets/images/Bali.jpg'),
@@ -126,7 +125,7 @@ class HomeScreen extends StatelessWidget {
                                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                                   ),
                                   onPressed: () {
-                                    // Eksekusi Poin 7: Logout & Hapus Riwayat
+                                
                                     Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
                                   },
                                   child: const Text('Ya, Logout', style: TextStyle(fontWeight: FontWeight.bold)),
